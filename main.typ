@@ -3,7 +3,7 @@
 #let gap = h(5pt)
 
 // Rules
-#set page(paper: "us-letter", margin: (x: 1.5cm, y: 1.5cm))
+#set page(paper: "us-letter", margin: (x: 1.5cm, y: 1cm))
 #set text(size: 12pt)
 #show link: set text(fill: blue.darken(20%))
 #show link: underline
@@ -41,13 +41,15 @@ Passionate about building reliable data infrastructure and streaming systems.
 
 == PROJECTS
 #hr()
-*Real-Time Stock Pipeline*
+*Real-Time Stock Pipeline* #gap | #gap #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
+(Python, Apache Kafka, Docker, PostgreSQL)
 - Designed and Developed a containerized event-driven architecture to ingest and process real-time stock market data from the Finnhub API to PostgreSQL.
 - Implemented Kafka Producer and Consumer using Avro serialization and Confluent Schema Registry to ensure data integrity and schema governance.
 - Optimized container strategy using multi-stage Docker builds and uv for faster dependency resolution.
 - Orchestrated a 6-service stack with Docker Compose, implementing custom healthchecks to manage complex service dependencies and networking.
 
-*Citibike ELT Pipeline*
+*Citibike ELT Pipeline* #gap | #gap #link("https://github.com/0xElsharawy/Citibike-ELT-Pipeline")[GitHub] \
+(Python, Apache Airflow, dbt, PostgreSQL, Docker)
 - Designed and implemented an end-to-end ELT pipeline for ingesting Citi Bike trip data into PostgreSQL.
 - Orchestrated data ingestion using Airflow DAGs and transformed it using dbt.
 - Optimized large-scale ingestion by processing data in chunks to efficiently handle millions of records.
