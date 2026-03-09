@@ -1,12 +1,12 @@
 #import "config.typ": *
 
-#let gap = h(5pt)
-
 // Rules
 #set page(paper: "us-letter", margin: (x: 1.5cm, y: 1cm))
 #set text(size: 12pt)
 #show link: set text(fill: blue.darken(20%))
 #show link: underline
+
+#let gap = h(5pt)
 
 #let hr() = {
     line(length: 100%, stroke: 1pt + black)
