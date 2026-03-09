@@ -6,7 +6,7 @@
 #show link: set text(fill: blue.darken(20%))
 #show link: underline
 
-#let gap = h(5pt)
+#let sep = [#h(5pt) | #h(5pt)]
 
 #let hr() = {
     line(length: 100%, stroke: 1pt + black)
@@ -19,8 +19,10 @@
 ]
 
 #align(center)[
-    #link("mailto:ahmedelsharawy117@gmail.com")[#email] #gap | #gap #phone #gap | #gap #location \
-    #link("https://www.linkedin.com/in/ahmed-elsh3rawy")[#linkedin] #gap | #gap #link("https://github.com/0xElsharawy")[#github]
+    #link("mailto:ahmedelsharawy117@gmail.com")[#email] #sep #phone #sep #location \
+    #link("https://www.linkedin.com/in/ahmed-elsh3rawy")[#linkedin] #sep #link(
+        "https://github.com/0xElsharawy",
+    )[#github]
 ]
 
 
@@ -41,14 +43,14 @@ Passionate about building reliable data infrastructure and streaming systems.
 
 == PROJECTS
 #hr()
-*Real-Time Stock Pipeline* #gap | #gap #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
-(Python, Apache Kafka, Docker, PostgreSQL)
+*Real-Time Stock Pipeline* #sep #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
+(Python, Apache Kafka, PostgreSQL, Docker)
 - Designed and Developed a containerized event-driven architecture to ingest and process real-time stock market data from the Finnhub API to PostgreSQL.
 - Implemented Kafka Producer and Consumer using Avro serialization and Confluent Schema Registry to ensure data integrity and schema governance.
 - Optimized container strategy using multi-stage Docker builds and uv for faster dependency resolution.
 - Orchestrated a 6-service stack with Docker Compose, implementing custom healthchecks to manage complex service dependencies and networking.
 
-*Citibike ELT Pipeline* #gap | #gap #link("https://github.com/0xElsharawy/Citibike-ELT-Pipeline")[GitHub] \
+*Citibike ELT Pipeline* #sep #link("https://github.com/0xElsharawy/Citibike-ELT-Pipeline")[GitHub] \
 (Python, Apache Airflow, dbt, PostgreSQL, Docker)
 - Designed and implemented an end-to-end ELT pipeline for ingesting Citi Bike trip data into PostgreSQL.
 - Orchestrated data ingestion using Airflow DAGs and transformed it using dbt.
@@ -58,7 +60,7 @@ Passionate about building reliable data infrastructure and streaming systems.
 == EDUCATION
 #hr()
 *Kafr El-Sheikh University* \
-B.Sc. in Computer Science, Information Systems #gap | #gap Expected Graduation: *June 2026*
+B.Sc. in Computer Science, Information Systems #sep Expected Graduation: *June 2026*
 
 == LANGUAGES
 #hr()
