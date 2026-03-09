@@ -35,7 +35,7 @@ Create `config.typ` and put your personal information in it:
 - Phone
 - LinkedIn & GitHub URLs
 
-```sh
+```typst
 #let author = "Your Name"
 #let title = "Your Job Title"
 #let location = "Your Location"
