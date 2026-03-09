@@ -9,23 +9,6 @@ A professional resume/CV built with [Typst](https://typst.app/), a modern typese
 
 ## Usage
 
-```sh
-# Compile to PDF
-just compile
-
-# Watch for changes (live reload)
-just watch
-```
-
-Alternatively, you can use Typst directly:
-
-```sh
-typst compile main.typ   # Compile to PDF
-typst watch main.typ     # Watch for changes (live reload)
-```
-
-## Customization
-
 Create `config.typ` and put your personal information in it:
 
 - Author name
@@ -43,7 +26,27 @@ Create `config.typ` and put your personal information in it:
 #let phone = "+1234567890"
 #let linkedin = "linkedin.com/in/yourprofile"
 #let github = "github.com/yourusername"
+
 ```
+
+Then build the resume using Just:
+
+```sh
+# Compile to PDF
+just compile
+
+# Watch for changes (live reload)
+just watch
+```
+
+Alternatively, you can use Typst directly:
+
+```sh
+typst compile main.typ   # Compile to PDF
+typst watch main.typ     # Watch for changes (live reload)
+```
+
+## Customization
 
 Edit `main.typ` to modify:
 
