@@ -11,13 +11,6 @@ A professional resume/CV built with [Typst](https://typst.app/), a modern typese
 
 Create `config.typ` and put your personal information in it:
 
-- Author name
-- Job title
-- Location
-- Email
-- Phone
-- LinkedIn & GitHub URLs
-
 ```typst
 #let author = "Your Name"
 #let title = "Your Job Title"
