@@ -20,7 +20,7 @@
 
 #align(center)[
     #link("mailto:ahmedelsharawy117@gmail.com")[#email] #sep #phone #sep #location \
-    #link("https://www.linkedin.com/in/ahmed-elsh3rawy")[#linkedin] #sep #link(
+    #link("https://www.linkedin.com/in/0xElsharawy")[#linkedin] #sep #link(
         "https://github.com/0xElsharawy",
     )[#github]
 ]
