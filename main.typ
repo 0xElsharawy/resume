@@ -1,7 +1,7 @@
 #import "config.typ": *
 
 // Rules
-#set page(paper: "us-letter", margin: (x: 1.5cm, y: 1cm))
+#set page(paper: "us-letter", margin: (x: 1.5cm, y: 2cm))
 #set text(size: 12pt)
 #show link: set text(fill: blue.darken(20%))
 #show link: underline
@@ -28,10 +28,9 @@
 
 == SUMMARY
 #hr()
-Data engineer with hands-on experience building real-time and batch data pipelines.
-Skilled in Python, SQL, Apache Kafka, Airflow, dbt, and PostgreSQL, with experience designing scalable ETL/ELT workflows and event-driven architectures.
-Experienced in containerizing data systems using Docker and implementing schema management with Confluent Schema Registry.
-Passionate about building reliable data infrastructure and streaming systems.
+Data engineer building real-time and batch data pipelines using Python, SQL, Kafka, Airflow, and PostgreSQL.
+Comfortable working across new tools and quickly adapting to different parts of the data stack.
+Experience with Docker for deploying and managing data systems.
 
 == SKILLS
 #hr()
@@ -43,12 +42,21 @@ Passionate about building reliable data infrastructure and streaming systems.
 
 == PROJECTS
 #hr()
-*Real-Time Stock Pipeline* #sep #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
-(Python, Apache Kafka, PostgreSQL, Docker)
-- Designed and Developed a containerized event-driven architecture to ingest and process real-time stock market data from the Finnhub API to PostgreSQL.
-- Implemented Kafka Producer and Consumer using Avro serialization and Confluent Schema Registry to ensure data integrity and schema governance.
-- Optimized container strategy using multi-stage Docker builds and uv for faster dependency resolution.
-- Orchestrated a 6-service stack with Docker Compose, implementing custom healthchecks to manage complex service dependencies and networking.
+
+*Clima* #sep #link("https://github.com/0xElsharawy/clima")[GitHub] \
+(Python, Apache Airflow, Kafka, Flink, PostgreSQL, MinIO, Terraform, Docker)
+- Built a real-time data pipeline to ingest, store, and process weather data from the Open-Meteo API.
+- Orchestrated batch and streaming workflows using Apache Airflow with multi-stage DAGs.
+- Used Apache Kafka and Apache Flink to process streaming weather data before loading into PostgreSQL.
+- Implemented a MinIO-based data lake to store raw JSON data for replayability and lineage, with infrastructure provisioned using Terraform.
+- Containerized the system using Docker Compose for local deployment of all services.
+
+// *Real-Time Stock Pipeline* #sep #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
+// (Python, Apache Kafka, PostgreSQL, Docker)
+// - Designed and Developed a containerized event-driven architecture to ingest and process real-time stock market data from the Finnhub API to PostgreSQL.
+// - Implemented Kafka Producer and Consumer using Avro serialization and Confluent Schema Registry to ensure data integrity and schema governance.
+// - Optimized container strategy using multi-stage Docker builds and uv for faster dependency resolution.
+// - Orchestrated a 6-service stack with Docker Compose, implementing custom healthchecks to manage complex service dependencies and networking.
 
 *Citibike ELT Pipeline* #sep #link("https://github.com/0xElsharawy/Citibike-ELT-Pipeline")[GitHub] \
 (Python, Apache Airflow, dbt, PostgreSQL, Docker)
