@@ -1,7 +1,7 @@
 #import "config.typ": *
 
 // Rules
-#set page(paper: "us-letter", margin: (x: 1cm, y: 0.5cm))
+#set page(paper: "us-letter", margin: (x: 1cm, y: 1cm))
 #set text(size: 12pt)
 #show link: set text(fill: blue.darken(20%))
 #show link: underline
@@ -42,25 +42,24 @@ Experience with Docker for deploying and managing data systems.
 
 == PROJECTS
 #hr()
-
 *Clima* #sep #link("https://github.com/0xElsharawy/clima")[GitHub] \
-(Python, Apache Airflow, Kafka, Flink, PostgreSQL, MinIO, Terraform, Docker)
+(Python · Apache Airflow · Kafka · Flink · PostgreSQL · MinIO · Terraform · Docker)
 - Built a real-time data pipeline to ingest, store, and process weather data from the Open-Meteo API.
 - Orchestrated batch and streaming workflows using Apache Airflow with multi-stage DAGs.
 - Processed streaming data with Kafka and Flink before loading into PostgreSQL.
 - Implemented a MinIO-based data lake with Terraform provisioning and containerized the system using Docker Compose.
 
 *Real-Time Stock Pipeline* #sep #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
-(Python, Apache Kafka, PostgreSQL, Docker)
-- Designed and Developed a containerized event-driven architecture to ingest and process real-time stock market data from the Finnhub API to PostgreSQL.
-- Implemented Kafka Producer and Consumer using Avro serialization and Confluent Schema Registry to ensure data integrity and schema governance.
-- Containerized the entire pipeline using Docker Compose for easy deployment and scalability.
+(Python · Apache Kafka · PostgreSQL · Docker)
+- Built a containerized real-time pipeline to ingest and process real-time stock data from the Finnhub API into PostgreSQL.
+- Implemented Kafka producers and consumers using Avro and Schema Registry for structured data handling.
+- Containerized the system using Docker Compose for deployment and service management.
 
 *Citibike ELT Pipeline* #sep #link("https://github.com/0xElsharawy/Citibike-ELT-Pipeline")[GitHub] \
-(Python, Apache Airflow, dbt, PostgreSQL, Docker)
-- Designed and implemented a containerized end-to-end ELT pipeline for ingesting Citi Bike trip data into PostgreSQL.
-- Orchestrated data ingestion using Airflow DAGs and transformed it using dbt.
-- Optimized large-scale ingestion by processing data in chunks to efficiently handle millions of records.
+(Python · Apache Airflow · dbt · PostgreSQL · Docker)
+- Built a containerized ELT pipeline to ingest Citi Bike trip data into PostgreSQL.
+- Orchestrated ingestion with Airflow and transformed data using dbt.
+- Processed data in chunks to handle large datasets efficiently.
 
 == EDUCATION
 #hr()
@@ -69,4 +68,4 @@ B.Sc. in Computer Science, Information Systems #sep Expected Graduation: *June 2
 
 == LANGUAGES
 #hr()
-*Arabic*: Native #h(9em) *English*: Fluent
+*Arabic*: Native #h(15em) *English*: Fluent
