@@ -1,7 +1,8 @@
-file := "main.typ"
+input := "main.typ"
+output := "ahmed-elsharawy-resume.pdf"
 
 @compile:
-    typst compile {{file}}
+    typst compile {{input}} {{output}}
 
 @watch:
-    typst watch {{file}}
+    typst watch {{input}} {{output}}
