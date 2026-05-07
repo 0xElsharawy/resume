@@ -7,6 +7,7 @@
 #show link: underline
 
 #let sep = [#h(5pt) | #h(5pt)]
+#let mid = "\u{00B7}"
 
 #let hr() = {
     line(length: 100%, stroke: 1pt + black)
@@ -28,39 +29,40 @@
 
 == SUMMARY
 #hr()
-Data engineer building real-time and batch data pipelines using Python, SQL, Kafka, Airflow, and PostgreSQL.
-Comfortable working across new tools and quickly adapting to different parts of the data stack.
-Experience with Docker for deploying and managing data systems.
+Results-driven Data Engineer with hands-on experience designing and deploying
+end-to-end real-time and batch data pipelines. Proficient in Python, SQL, Apache
+Kafka, Airflow, Spark, and dbt, with a track record of building scalable,
+containerised data systems that cut data latency from daily batches to near
+real-time. Passionate about modern data stack tooling and eager to
+contribute to high-impact data engineering teams.
 
 == SKILLS
 #hr()
 - *Languages*: Python, SQL, Bash
 - *Databases*: PostgreSQL, MySQL, MongoDB
-- *Data Tools*: Apache Spark, Kafka, Airflow, dbt
-- *Technologies*: Docker, Git/GitHub, Linux
-- *Concepts*: Data Warehousing, ETL/ELT, Orchestration, Containerization
+- *Data Tools*: Apache Spark, Apache Kafka, Apache Airflow, dbt
+- *Could & Infra*: Docker, Docker Compose, Terraform, MinIO, Linux
+- *Version Control*: Git, GitHub
 
 == PROJECTS
 #hr()
 
 *BikeSpark* #sep #link("https://github.com/0xElsharawy/bikespark")[GitHub] \
-(Python · Apache Airflow · Spark · ClickHouse · dbt · Docker)
-- Built a data pipeline that downloads, loads, and processes Citi Bike trip data.
-- Used Airflow to run and manage pipeline steps (table creation, ingestion, transformations).
-- Loaded CSV data into ClickHouse using Spark.
-- Transformed raw data into structured tables using dbt.
+#text(fill: gray.darken(50%))[(Python #mid Airflow #mid Spark #mid ClickHouse #mid dbt #mid Docker)]
+- Designed and implemented an end-to-end ELT pipeline to process large-scale Citi Bike trip datasets for analytics use cases.
+- Orchestrated data workflows using Apache Airflow, managing ingestion, transformation, and model-building stages via scheduled DAGs.
+- Processed and loaded raw trip data into ClickHouse using Apache Spark with distributed batch processing.
+- Modeled analytical datasets using dbt, implementing staging and dimensional models (fact and dimension tables).
+- Containerized the entire system using Docker Compose for reproducible local development and deployment.
 
 *Clima* #sep #link("https://github.com/0xElsharawy/clima")[GitHub] \
-(Python · Apache Airflow · Kafka · Flink · PostgreSQL · MinIO · Terraform · Docker)
-- Built a real-time data pipeline to ingest, store, and process weather data from the Open-Meteo API.
-- Orchestrated batch and streaming workflows using Apache Airflow with multi-stage DAGs.
-- Processed streaming data with Kafka and Flink before loading into PostgreSQL.
-- Implemented a MinIO-based data lake with Terraform provisioning and containerized the system using Docker Compose.
-
-*Real-Time Stock Pipeline* #sep #link("https://github.com/0xElsharawy/realtime-stock-pipeline")[GitHub] \
-(Python · Apache Kafka · PostgreSQL · Docker)
-- Built a containerized real-time pipeline to ingest and process real-time stock data from the Finnhub API into PostgreSQL.
-- Implemented Kafka producers and consumers using Avro and Schema Registry for structured data handling.
+#text(
+    fill: gray.darken(50%),
+)[(Python #mid Airflow #mid Kafka #mid Flink #mid PostgreSQL #mid MinIO #mid Terraform #mid Docker)]
+- Designed and implemented a real-time weather data pipeline ingesting data from the Open-Meteo API.
+- Implemented real-time event streaming with Apache Kafka and stream processing using Apache Flink.
+- Persisted raw and processed data using MinIO and PostgreSQL for analytical querying.
+- Provisioned infrastructure using Terraform and containerized the system using Docker Compose for local deployment.
 
 == EDUCATION
 #hr()
